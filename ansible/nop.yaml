@@ -1,5 +1,6 @@
 ---
 - name: deploy nop
   become: yes
+  hosts: all
   tasks:
     - ansible.builtin.ping:
