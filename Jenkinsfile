@@ -18,7 +18,7 @@ pipeline {
         stage('deploy') {
             agent { label 'dotnet' }
             steps {
-                sh "ansible -i '172.31.17.48, ' -m ping all"
+                sh "ansible-playbook -i ansible/hosts ansible/nop.yaml"
             }
         }
     }
