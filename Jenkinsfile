@@ -12,7 +12,7 @@ pipeline {
         stage('build') {
             agent { label 'dotnet' }
             steps {
-                sh './build.sh'
+                sh 'sudo bash build.sh'
             }
         }
     }
