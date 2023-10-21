@@ -48,3 +48,4 @@ dotnet build Nop.Plugin.Widgets.What3words.csproj -c Release
 # publish project
 cd $HOME_DIR/src/Presentation/Nop.Web   
 dotnet publish Nop.Web.csproj -c Release -o "$HOME_DIR/published"
+zip -r /tmp/nopCommerce.zip "$HOME_DIR/published"
