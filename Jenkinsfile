@@ -15,6 +15,12 @@ pipeline {
                 sh 'sudo bash build.sh'
             }
         }
+        stage('deploy') {
+            agent { label 'dotnet' }
+            steps {
+                sh "ansible -i '172.31.17.48, ' -m ping all"
+            }
+        }
     }
 
 }
