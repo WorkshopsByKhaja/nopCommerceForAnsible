@@ -1,5 +1,5 @@
 #!/bin/bash
-HOME_DIR="${WORKSPACE}"
+HOME_DIR="/var/lib/jenkins/workspace/nopCommerce@2"
 cd "$HOME_DIR/src"
 dotnet restore NopCommerce.sln
 cd "$HOME_DIR/src/Presentation/Nop.Web"
